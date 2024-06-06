@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Philosophy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4b0e0e; /* Dark Maroon Red */
+            color: #f4f4f9;
+        }
+        header {
+            background: linear-gradient(90deg, #0f0f0f, #292929);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+        }
+        nav a:hover {
+            background-color: #e63946;
+        }
+        .hero {
+            background: url('https://scontent-lhr6-1.xx.fbcdn.net/v/t39.30808-6/447492846_7739707589448727_7475326104813953911_n.png?stp=dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=rG-uodJH51gQ7kNvgGxFJ2L&_nc_ht=scontent-lhr6-1.xx&oh=00_AYCjTAycXvXKS6heb91dxLlfq5FS0zFaxi_teK_zx0SEqA&oe=66676D2A') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 120px 20px 80px;
+            text-align: center;
+            margin-top: 80px;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+        }
+        .hero p {
+            font-size: 1.3em;
+            font-family: 'Roboto', sans-serif;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .about, .events, .contact {
+            background-color: #fff;
+            margin: 40px auto; /* Change margin to 40px auto */
+            border-radius: 10px;
+            padding: 60px 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        h2 {
+            color: #e63946;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+        .events ul {
+            list-style: none;
+            padding: 0;
+        }
+        .events li {
+            background-color: #f4f4f9;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .events li h3 {
+            margin: 0 0 10px 0;
+            font-family: 'Playfair Display', serif;
+        }
+        .events li p {
+            margin: 0 0 10px 0;
+        }
+        .join-button {
+            background-color: #e63946;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .join-button:hover {
+            background-color: #d62828;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .contact input, .contact textarea {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .contact button {
+            background-color: #e63946;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+        .contact button:hover {
+            background-color: #d62828;
+        }
+        footer {
+            background-color: #0f0f0f;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#events">Events</a>
+        </nav>
+    </header>
+
+    <div id="hero" class="hero">
+        <h1>Casual Philosophy</h1>
+        <p>Exploring philosophy in a relaxed and informal setting</p>
+    </div>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Casual Philosophy is a group dedicated to exploring philosophical ideas in a friendly and inclusive environment. We believe philosophy should be accessible to everyone, whether you're a seasoned philosopher or just curious about the subject.</p>
+    </section>
+
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>
+                <h3>What is Reality? - June 13, 2024</h3>
+                <p>Join us for an engaging and friendly discussion on one of life's biggest questions: "What is Reality?" In this meetup, we'll explore the fascinating world of metaphysics, which looks at the nature of reality and existence.</p>
+                <p>Thursday, June 13, 2024<br>7:00 PM to 9:30 PM BST<br>The Botanist Reading, Unit 1, 1-5 King Street, Reading, RG1 2HD · Reading</p>
+                <a href="https://www.meetup.com/sunday-alternative-reading/events/301483338/?_xtd=gqFyqTI2ODIyNDgzNaFwo2FwaQ%253D%253D&from=ref" target="_blank" class="join-button">Join on Meetup</a>
+            </li>
+            <li>
+                <h3>Pending Event - June 27, 2024</h3>
+                <p>Details Pending</p>
+            </li>
+            <li>
+                <h3>Pending Event - July 11, 2024</h3>
+                <p>Details Pending</p>
+            </li>
+        </ul>
+    </section>
+    
+        <footer>
+            <p>&copy; 2024 Casual Philosophy</p>
+        </footer>
+    
+    </body>
+    </html>
+    
